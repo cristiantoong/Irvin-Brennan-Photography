@@ -1,0 +1,37 @@
+#about{
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  // flex-wrap: wrap;
+  .about-left{
+    flex: 1 1 40rem;
+    position: relative;
+    h5{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      letter-spacing: 2rem;
+    }
+    img{
+      height: 100%;
+    }
+  }
+  .about-right{
+    flex: 2 1 40rem;
+    background: $background-color;
+    color: #fff;
+    padding: 4rem 6rem;
+    h5{
+      text-align: center;
+      font-family: 'Lobster', cursive;
+    }
+    h2{
+      padding-top: 8rem;
+    }
+    p{
+      padding-top: 2rem;
+    }
+  }
+}

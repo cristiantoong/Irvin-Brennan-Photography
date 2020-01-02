@@ -1,0 +1,63 @@
+#main-head{
+    width: 100%;
+    margin: auto;
+    min-height: 10vh;
+}
+
+nav {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    padding: 2rem 0rem;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 5;
+    .logo{
+        flex: 1 1 10rem;
+        margin-left: 4rem;
+        h1{
+            font-family: 'Lobster', cursive;
+        }
+    }
+    ul{
+        @include flex(space-around, center, row);
+        flex: 1 1 40rem; 
+    }
+}
+
+// .burger{
+//     display: none;
+//   }
+
+#hero {
+    min-height: 90vh;
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .hero-intro{
+        flex: 2 1 40rem;
+        text-align: center;
+        margin-top: 5rem;
+        p{
+            padding: 5rem 10rem;
+        }
+        a{
+            padding: 2rem 8rem;
+            border: 3px solid black;
+            margin-bottom: 4rem;
+        }
+    }   
+    .hero-image{
+        flex: 1.5 1 40rem;
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+

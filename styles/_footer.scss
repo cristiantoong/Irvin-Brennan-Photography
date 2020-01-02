@@ -1,0 +1,15 @@
+footer{
+  background: $gray-text;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  h4{
+    color: #fff;
+    flex: 1 1 40rem;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+  }
+}

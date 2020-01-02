@@ -1,0 +1,42 @@
+#contact{
+  display: flex;
+  min-height: 90vh;
+  flex-wrap: wrap;
+  .form-wrapper{
+    @include flex(center, center, column);
+    flex: 3 1 40rem;
+    h2{
+      margin: 0 auto;
+    }
+    span{
+      font-size: 8rem;
+      color: $green-text;
+    }
+    label{
+      display: block;
+    }
+    input{
+      display: block;
+      margin: 3rem 0rem;
+      background: $background-color;
+      color: white;
+      border: none;
+      padding: 1rem;
+    }
+    button{
+      padding: 1rem 8rem;
+      background: $green-text;
+      color: white;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  .contact-image{
+    flex: 1 1 40rem;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
