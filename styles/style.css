@@ -290,7 +290,7 @@ nav ul {
 
 #contact .form-wrapper span {
   font-size: 8rem;
-  color: #e72552;
+  color: #812CCF;
 }
 
 #contact .form-wrapper label {
@@ -308,7 +308,7 @@ nav ul {
 
 #contact .form-wrapper button {
   padding: 1rem 8rem;
-  background: #e72552;
+  background: #812CCF;
   color: white;
   border: none;
   width: 100%;
@@ -502,6 +502,24 @@ footer ul {
             order: 2;
     text-align: center;
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #about {
+    margin-top: -13rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #about {
+    margin-top: -16rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #about {
+    margin-top: -20rem;
   }
 }
 

@@ -6,7 +6,7 @@ $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #414141;
 $gray-text: #2c2c2c;
-$green-text: #e72552;
+$green-text: #812CCF;
 
 @mixin flex($justify, $align, $direction) {
     display: flex;
@@ -171,6 +171,29 @@ $green-text: #e72552;
     
 
 }
+
+// Iphone 6/7plus
+@media screen and (max-width:414px){
+  #about{
+    margin-top: -13rem;
+  }
+}
+
+// IphoneX
+@media screen and (max-width:375px){
+  #about{
+    margin-top: -16rem;
+  }
+}
+
+// Iphone SE
+@media screen and (max-width:320px){
+  #about{
+    margin-top: -20rem;
+  }
+}
+  
+
 
   /* style applies after or greater 1700px */
   @media screen and (min-width: 1700px){
