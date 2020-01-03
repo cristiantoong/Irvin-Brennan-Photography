@@ -173,6 +173,8 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #about .about-left {
@@ -201,7 +203,7 @@ nav ul {
           flex: 2 1 40rem;
   background: #414141;
   color: #fff;
-  padding: 4rem 6rem;
+  padding: 4rem 4rem;
 }
 
 #about .about-right h5 {
@@ -288,7 +290,7 @@ nav ul {
 
 #contact .form-wrapper span {
   font-size: 8rem;
-  color: #536543;
+  color: #e72552;
 }
 
 #contact .form-wrapper label {
@@ -306,7 +308,7 @@ nav ul {
 
 #contact .form-wrapper button {
   padding: 1rem 8rem;
-  background: #536543;
+  background: #e72552;
   color: white;
   border: none;
   width: 100%;
@@ -353,11 +355,41 @@ footer ul {
           flex: 1 1 40rem;
 }
 
+@media screen and (max-width: 1194px) {
+  #hero {
+    width: 100%;
+    min-height: 95vh !important;
+  }
+  .hero-intro {
+    margin-bottom: 5rem;
+  }
+  .hero-intro a {
+    display: inline-block;
+    padding-bottom: 5rem;
+  }
+  .hero-image {
+    width: 100% !important;
+  }
+  .hero-image img {
+    height: 100% !important;
+  }
+  #about .about-left {
+    width: 100% !important;
+  }
+  #about .about-left img {
+    width: 100% !important;
+  }
+  #contact img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .burger {
     position: relative;
     display: block;
     cursor: pointer;
+    margin-right: 4rem !important;
   }
   .burger span {
     padding: 0.2rem 2rem;
@@ -408,5 +440,70 @@ footer ul {
             transform: rotateZ(-45deg) translateY(-300%);
     background: white;
   }
+  #hero {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 0 !important;
+    width: 100%;
+    min-height: 100%;
+  }
+  .hero-intro {
+    margin-bottom: 5rem;
+  }
+  .hero-intro a {
+    display: inline-block;
+    padding-bottom: 5rem;
+  }
+  .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .hero-image img {
+    height: 100% !important;
+  }
+  #about {
+    margin-top: -8rem;
+  }
+  #about .about-left {
+    width: 100% !important;
+  }
+  #about .about-left img {
+    width: 100% !important;
+  }
+  .about-text div {
+    padding: 3rem 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #gallery {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)) !important;
+  }
+  #gallery img {
+    grid-row: auto !important;
+    grid-column: auto !important;
+  }
+  #contact img {
+    display: none;
+  }
+  footer ul {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer h4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+    padding: 1rem;
+  }
 }
+
+/* style applies after or greater 1700px */
 /*# sourceMappingURL=style.css.map */

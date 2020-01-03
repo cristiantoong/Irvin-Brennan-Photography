@@ -3,7 +3,7 @@
   margin: auto;
   min-height: 100vh;
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   .about-left{
     flex: 1 1 40rem;
     position: relative;
@@ -22,7 +22,7 @@
     flex: 2 1 40rem;
     background: $background-color;
     color: #fff;
-    padding: 4rem 6rem;
+    padding: 4rem 4rem;
     h5{
       text-align: center;
       font-family: 'Lobster', cursive;

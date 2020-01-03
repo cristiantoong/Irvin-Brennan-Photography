@@ -6,7 +6,7 @@ $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #414141;
 $gray-text: #2c2c2c;
-$green-text: #536543;
+$green-text: #e72552;
 
 @mixin flex($justify, $align, $direction) {
     display: flex;
@@ -22,7 +22,36 @@ $green-text: #536543;
 @import 'contact';
 @import 'footer';
 
+@media screen and (max-width:1194px){
+  #hero{
+    width: 100%;
+    min-height: 95vh!important;
+  }
 
+  .hero-intro{
+    margin-bottom: 5rem;
+    a{
+      display: inline-block;
+      padding-bottom: 5rem;
+    }
+  }
+  .hero-image{
+    width: 100%!important;
+    img{
+      height: 100%!important;
+    }
+  }
+  #about .about-left{
+    width: 100%!important;
+    img{
+      width: 100%!important;
+    }
+  }
+
+  #contact img{
+    display: none;
+  }
+}
 
 
 @media screen and (max-width:768px){
@@ -30,6 +59,7 @@ $green-text: #536543;
         position: relative;
         display: block;
         cursor: pointer;
+        margin-right: 4rem!important;
       }
       .burger span{
         padding: 0.2rem 2rem;
@@ -70,4 +100,85 @@ $green-text: #536543;
         transform: rotateZ(-45deg) translateY(-300%);
         background: white;
       }
+
+      #hero{
+        flex-direction: column!important;
+        margin: 0 !important;
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .hero-intro{
+        margin-bottom: 5rem;
+        a{
+          display: inline-block;
+          padding-bottom: 5rem;
+        }
+      }
+      .hero-image{
+        width: 100%!important;
+        height: 100%!important;
+        img{
+          height: 100%!important;
+        }
+      }
+
+      // About section
+      #about{
+        margin-top: -8rem;
+      }
+
+      #about .about-left{
+        width: 100%!important;
+        img{
+          width: 100%!important;
+        }
+      }
+      .about-text div {
+        padding: 3rem 3rem;
+        flex-direction: column;
+        width: 100%;
+     
+      }
+      
+    // Gallery
+    #gallery{
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))!important;
+      // .gallery-head{
+      //   display: none;
+      // }
+      img{
+        grid-row: auto!important;
+        grid-column: auto!important;
+      }
+    }
+
+    // Contact
+    #contact img{
+      display: none;
+    }
+
+    // Footer
+
+    footer ul{
+      order: 1;
+    }
+    footer h4{
+      order: 2;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+
 }
+
+  /* style applies after or greater 1700px */
+  @media screen and (min-width: 1700px){
+    html{
+      $header1: 4rem;
+      $header2: 5.5rem;
+      $header3: 4rem;
+      $header4: 4rem;
+      $text: 3rem;
+    }
+  }
