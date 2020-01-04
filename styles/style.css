@@ -195,6 +195,9 @@ nav ul {
 
 #about .about-left img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #about .about-right {
@@ -203,7 +206,9 @@ nav ul {
           flex: 2 1 40rem;
   background: #414141;
   color: #fff;
-  padding: 4rem 4rem;
+  padding: 4rem 0rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #about .about-right h5 {
@@ -219,12 +224,17 @@ nav ul {
   padding-top: 2rem;
 }
 
+#about .about-right div {
+  padding: 3rem 8rem;
+}
+
 #gallery {
-  width: 100%;
   min-height: 100vh;
   position: relative;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -254,6 +264,13 @@ nav ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+}
+
+#gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contact {
@@ -290,7 +307,7 @@ nav ul {
 
 #contact .form-wrapper span {
   font-size: 8rem;
-  color: #812CCF;
+  color: #C14953;
 }
 
 #contact .form-wrapper label {
@@ -308,7 +325,7 @@ nav ul {
 
 #contact .form-wrapper button {
   padding: 1rem 8rem;
-  background: #812CCF;
+  background: #C14953;
   color: white;
   border: none;
   width: 100%;
