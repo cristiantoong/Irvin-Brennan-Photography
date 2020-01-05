@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 body {
@@ -50,3 +50,22 @@ h1 {
       opacity: 1;
     }
   }
+
+  /*scroll to Top*/
+
+.scrollToTop {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  display: none;
+  border-radius: .2rem;
+}
+
+.scrollToTop:hover {
+  background: rgba(0,0,0,0.5);
+}
